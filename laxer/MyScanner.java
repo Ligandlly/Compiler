@@ -5,6 +5,9 @@ import java.util.List;
 import java.io.*;
 
 public class MyScanner {
+    /**
+     * 将文件按空格和换行符分开，结果存放在list中
+     */
     public final List<String> list;
 
     public MyScanner(String fileName) {

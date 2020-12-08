@@ -7,7 +7,10 @@ public class Lexer {
     public List<AbstractTocken> results = new LinkedList<>();
 
     static public boolean isInSameSet(char a, char b) {
-        // 判断ab是否是同一个类型，分隔符算作不同的类型
+        /**
+         * @param a,b 待比较的字符
+         * @return ab是否是同一个类型，分隔符算作不同的类型
+         */ 
         if (Delimit.delimit_set.contains(a) || Delimit.delimit_set.contains(b)) {
             return false;
         }
